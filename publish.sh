@@ -5,7 +5,7 @@ if [ ! -S "/run/dbus/system_bus_socket" ]; then
 	echo "Need to bind /var/run/dbus"
 	exit 1
 fi
-if [ "$#" -le 1 ]; then
+if [ "$#" -lt 1 ]; then
 	echo "Specify (host1) (host2) ..."
 	exit 1
 fi

@@ -15,3 +15,14 @@ This Docker image requires access to the system's dbus to query the server's hos
 ```
 --mount type=bind,source=/var/run/dbus,target=/var/run/dbus
 ```
+
+## TrueNAS App setup
+
+* Image repository: ghcr.io/adapt0/avahi-publish
+* Image tag: latest
+* Configuration container args (one arg per host!):
+  * {host1}
+  * {host2}
+* Configure host path volumes:
+  * Host Path: /var/run/dbus
+  * Mount Path: /var/run/dbus
